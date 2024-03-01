@@ -1,0 +1,23 @@
+=>link navwithbg.css to perticuler page
+
+
+
+=> Copy this line to body>
+
+	<iframe src="navwithbg.html" frameborder="0" scrolling="no" width="100%" height="76px"></iframe>
+
+
+
+=> Copy this code to perticuler pages's CSS
+
+iframe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+body {
+    background-image: url("Assets/images/home_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

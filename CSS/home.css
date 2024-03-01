@@ -1,0 +1,12 @@
+iframe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+body {
+    background-image: url("Assets/images/home_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

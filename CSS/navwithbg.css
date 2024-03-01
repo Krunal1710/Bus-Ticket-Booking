@@ -35,6 +35,11 @@ ul {
     cursor: pointer;
 }
 
+.right a {
+    text-decoration: none;
+    color: white;
+}
+
 .right li:hover {
     text-decoration: underline rgb(118, 5, 146);
     text-decoration-thickness: 5px;
@@ -54,9 +59,4 @@ nav button {
 
 nav button:hover {
     background-color: rgb(118, 5, 146);
-}
-body {
-    background-image: url("Assets/images/home_bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
