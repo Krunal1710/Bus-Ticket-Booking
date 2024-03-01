@@ -16,7 +16,7 @@ nav {
 }
 
 .mainhead {
-    height: 100px;
+    height: 76px;
 }
 
 header {
@@ -36,7 +36,7 @@ ul {
 }
 
 .right li:hover {
-    text-decoration: underline var(--button-color);
+    text-decoration: underline rgb(118, 5, 146);
     text-decoration-thickness: 5px;
 }
 
@@ -55,10 +55,8 @@ nav button {
 nav button:hover {
     background-color: rgb(118, 5, 146);
 }
-
-
-
-/* main part==================================================================*/
-
-
-/* footer==================================================================== */
+body {
+    background-image: url("Assets/images/home_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
