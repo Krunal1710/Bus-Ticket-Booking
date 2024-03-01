@@ -1,0 +1,64 @@
+:root {
+    --button-color: rgb(186, 39, 223);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.mainhead {
+    height: 100px;
+}
+
+header {
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.23);
+}
+
+nav .right,
+ul {
+    display: flex;
+    gap: 34px;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+}
+
+.right li:hover {
+    text-decoration: underline var(--button-color);
+    text-decoration-thickness: 5px;
+}
+
+
+nav button {
+    background-color: var(--button-color);
+    color: white;
+    font-weight: bold;
+
+    border-radius: 50px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: rgb(118, 5, 146);
+}
+
+
+
+/* main part==================================================================*/
+
+
+/* footer==================================================================== */
