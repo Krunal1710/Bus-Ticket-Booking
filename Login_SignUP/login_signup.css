@@ -1,0 +1,73 @@
+:root {
+    --button-color: rgb(186, 39, 223);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../Assets/images/home_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.521);
+    padding: 15px;
+    font-family: sans-serif;
+}
+
+.form-container {
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+}
+
+input,
+button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.684);
+    color: white;
+    font-weight: 700;
+    order: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+::placeholder {
+    color: white;
+    font-weight: 300;
+}
+
+button {
+    background-color: var(--button-color);
+    color: wheat;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(118, 5, 146);
+}
+
+iframe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+h2 {
+    font-weight: 800;
+    color: wheat;
+}
