@@ -1,0 +1,47 @@
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+body {
+    background-image: url("../Assets/images/home_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+}
+
+.maindiv {
+    margin: 150px 250px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.521);
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.service {
+    margin-top: 15px;
+    color: white;
+    font-weight: 700;
+}
+
+h1,
+h2 {
+    color: wheat;
+}
+
+p {
+    margin-top: 5px;
+}
+
+.footerbar {
+    background-color: grey;
+    height: 8vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}

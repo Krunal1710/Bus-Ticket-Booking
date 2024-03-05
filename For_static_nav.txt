@@ -10,7 +10,7 @@
 
 => Copy this code to perticuler pages's CSS
 
-iframe {
+.nav {
     position: fixed;
     top: 0;
     left: 0;

@@ -1,4 +1,4 @@
-iframe {
+.nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -9,4 +9,16 @@ body {
     background-image: url("../Assets/images/home_bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    min-height: 100vh; 
+}
+
+.footerbar{
+    background-color: grey;
+    height: 8vh;
+    font-weight: 800;
+    font-size: larger;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }

@@ -1,0 +1,17 @@
+==> Add this into body of perticuler CSS
+position: relative;
+min-height: 100vh; 
+
+==>Add to css of perticuler page
+.footerbar{
+    background-color: grey;
+    height: 8vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+==> Add this in html file
+<iframe class="footerbar" src="../Navbar/footer.html" frameborder="0" scrolling="no" width="100%" height="8vh"></iframe>
