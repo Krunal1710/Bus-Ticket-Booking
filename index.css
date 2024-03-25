@@ -1,0 +1,48 @@
+body {
+    background-image: url("Assets/images/home_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+}
+
+.welcome {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.359);
+    border-radius: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    justify-content: center;
+    position: relative;
+    top: 15vh;
+    margin-inline: 20vw;
+}
+
+.btn {
+    background-color: var(--button-color);
+    color: wheat;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: rgb(118, 5, 146);
+}
+
+:root {
+    --button-color: rgb(186, 39, 223);
+}
+
+.footerbar {
+    background-color: grey;
+    height: 8vh;
+    font-weight: 800;
+    font-size: larger;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

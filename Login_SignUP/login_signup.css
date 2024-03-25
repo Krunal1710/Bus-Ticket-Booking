@@ -33,6 +33,10 @@ body {
     margin: 10px;
 }
 
+.forsignup {
+    color: wheat;
+}
+
 input,
 button {
     margin: 10px 0;
