@@ -12,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
   if($result) {
     $_SESSION['login_user'] = $email;
-    header("location: welcome.php");
+    header("location: ../Login_SignUP/login.html");
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
