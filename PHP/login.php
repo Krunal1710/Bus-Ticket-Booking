@@ -15,8 +15,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['login_user'] = $email;
     header("location: ../Home/home.html");
   } else {
-    $error = "Your Login Name or Password is invalid";
-    echo $error;
+    echo '<script>alert("Your Login Name or Password is invalid");</script>';
   }
 }
 ?>
