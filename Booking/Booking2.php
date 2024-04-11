@@ -7,6 +7,7 @@
     <title>ABC Travels | Passenger_Details</title>
     <link rel="stylesheet" href="../Navbar/nav.css">
     <link rel="stylesheet" href="../Booking/Booking2.css">
+    <link rel="icon" type="image/png" href="../Assets/images/bus-icon.png">
 </head>
 
 <body>
@@ -29,12 +30,17 @@
             <label for="male">Male</label>
             <input type="radio" name="gender" id="Female" value="female">
             <label for="Female">Female</label><br><br>
-            <input type="button" class="button" value="Prev">
+            <input type="button" onclick="prev()" class="button" value="Prev">
             <input type="button" class="button" value="Next">
         </form>
     </div>
     <iframe class="footerbar" src="../Navbar/footer.html" frameborder="0" scrolling="no" width="100%"
         height="8vh"></iframe>
+    <script>
+        function prev() {
+            window.history.back();
+        }
+    </script>
 </body>
 
 </html>

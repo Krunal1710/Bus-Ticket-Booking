@@ -1,3 +1,10 @@
+:root {
+    --button-color: rgb(186, 39, 223);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
 .nav {
     position: fixed;
     top: 0;
@@ -29,15 +36,15 @@ body {
 
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
+    width: 50%;
+    margin: 7% 0%; 
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.521);
     border-radius: 15px;
-    color: wheat;
+    color: white;
 }
 
-h1 {
+h1,h2 {
     text-align: center;
     margin-bottom: 20px;
     color: wheat;
@@ -50,8 +57,8 @@ h1 {
 }
 
 .bus {
-    background-color: #f9f9f9;
-    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.684);
+    border-radius: 10px;
     padding: 15px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
@@ -67,4 +74,18 @@ h1 {
 
 .bus p strong {
     font-weight: bold;
+}
+button {
+    background-color: var(--button-color);
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(118, 5, 146);
 }
