@@ -1,0 +1,5 @@
+Session Variables:
+
+date 
+login_user
+selected_bus_number

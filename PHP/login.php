@@ -16,6 +16,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     header("location: ../Home/home.html");
   } else {
     echo '<script>alert("Your Login Name or Password is invalid");</script>';
+    echo "<script>window.location.href = '../Login_SignUP/login.html';</script>";
   }
 }
 ?>

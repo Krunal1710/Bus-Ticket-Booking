@@ -16,22 +16,23 @@
     <!-- main part -->
     <div class="maincontainer">
         <h2>Passenger Details</h2>
-        <form>
+        <form action="process_booking.php" method="post">
             <label for="pname">Passenger Name :</label>
             <input type="text" name="pname" id="pname" required><br><br>
-            <label for="mail">Mail :</label>
-            <input type="email" name="mail" id="mail" required><br><br>
             <label for="age">Age :</label>
             <input type="number" name="age" id="age" required><br><br>
             <label for="contact">Contact No. :</label>
             <input type="number" name="contact" id="contact" required><br><br>
+            <img src="../Assets/images/seat-layout.jpg" alt="seat-layout img"><br><br>
+            <label for="seat">Enter Seat Number(1-45) :</label>
+            <input type="number" name="seat" id="seat" required><br><br>
             <label for="gender">Gender :</label>
             <input type="radio" name="gender" id="Male" value="male">
             <label for="male">Male</label>
             <input type="radio" name="gender" id="Female" value="female">
             <label for="Female">Female</label><br><br>
             <input type="button" onclick="prev()" class="button" value="Prev">
-            <input type="button" class="button" value="Next">
+            <input type="submit" class="button" value="Payment" name="payment_submit">
         </form>
     </div>
     <iframe class="footerbar" src="../Navbar/footer.html" frameborder="0" scrolling="no" width="100%"
