@@ -1,0 +1,74 @@
+:root {
+    --button-color: rgb(186, 39, 223);
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+body {
+    background-image: url("../Assets/images/home_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerbar {
+    background-color: grey;
+    height: 8vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    color: wheat;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.button {
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--button-color);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: medium;
+}
+
+.button:hover {
+    background-color: rgb(118, 5, 146);
+}
+
+.maincontainer {
+    font-size: larger;
+    background-color: rgba(0, 0, 0, 0.521);
+    border-radius: 15px;
+    padding: 50px;
+    position: relative;
+    margin: 100px;
+    width: auto;
+}
+
+p {
+    margin-bottom: 5px;
+    color: white;
+}
+
+p strong {
+    font-weight: bold;
+}

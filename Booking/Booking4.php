@@ -15,7 +15,7 @@
     <iframe class="nav" src="../Navbar/nav.html" frameborder="0" scrolling="no" width="100%" height="76px"></iframe>
     <!-- main part -->
     <div class="maincontainer">
-        <form>
+        <form action="view_ticket.php">
             <img src="../Assets/images/payment-done.png" alt="payment-done img"><br><br>
             <input type="submit" class="button" value="View Ticket">
         </form>
