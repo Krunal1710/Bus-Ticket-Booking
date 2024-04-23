@@ -20,10 +20,10 @@
             <?php
             session_start();
             // Connect to the database
-            $db_host = "localhost"; // Enter your database host
-            $db_user = "root"; // Enter your database username
-            $db_pass = ""; // Enter your database password
-            $db_name = "bus_reservation"; // Enter your database name
+            $db_host = "localhost"; 
+            $db_user = "root"; 
+            $db_pass = ""; 
+            $db_name = "bus_reservation"; 
 
             $conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
 

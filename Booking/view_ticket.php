@@ -17,12 +17,12 @@
     <div class="maincontainer">
         <?php
         $conn = new mysqli("localhost", "root", "", "bus_reservation");
-
+        session_start();
+        $email = $_SESSION['login_user'];
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
-
-        $sql = "SELECT * FROM bookings ORDER BY bdate DESC LIMIT 1";
+        $sql = "SELECT * FROM bookings WHERE email='$email' ";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
