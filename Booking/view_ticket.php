@@ -26,18 +26,19 @@
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
-            $row = $result->fetch_assoc();
-            echo "<h2>Ticket Details</h2>";
-            echo "<p>Passenger Name: " . $row['pname'] . "</p>";
-            echo "<p>Email: " . $row['email'] . "</p>";
-            echo "<p>Bus Number: " . $row['bus_number'] . "</p>";
-            echo "<p>Seat Number: " . $row['seat'] . "</p>";
-            echo "<p>Journey Date: " . $row['bdate'] . "</p>";
-            echo "<p>Age: " . $row['age'] . "</p>";
-            echo "<p>Contact Number: " . $row['contact'] . "</p>";  
-            echo "<p>Gender: " . $row['gender'] . "</p>";
-            echo '<button type="button" class="button" onclick="printTicket()">Print Ticket</button>';
-            echo '<button class="button" onclick="redirectToHome()">Home</button>';
+           while ($row = $result->fetch_assoc()) {
+                echo "<h2>Ticket Details</h2>";
+                echo "<p>Passenger Name: " . $row['pname'] . "</p>";
+                echo "<p>Email: " . $row['email'] . "</p>";
+                echo "<p>Bus Number: " . $row['bus_number'] . "</p>";
+                echo "<p>Seat Number: " . $row['seat'] . "</p>";
+                echo "<p>Journey Date: " . $row['bdate'] . "</p>";
+                echo "<p>Age: " . $row['age'] . "</p>";
+                echo "<p>Contact Number: " . $row['contact'] . "</p>";  
+                echo "<p>Gender: " . $row['gender'] . "</p>";
+           } 
+           echo '<button type="button" class="button" onclick="printTicket()">Print Ticket</button>';
+           echo '<button class="button" onclick="redirectToHome()">Home</button>';
         } else {
             echo "<script>alert('No Bookings Found!!');</script>";
             echo "<script>window.location.href = '../Home/home.html';</script>";

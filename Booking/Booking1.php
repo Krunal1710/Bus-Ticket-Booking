@@ -37,6 +37,7 @@
                 $source = $_GET['source'];
                 $destination = $_GET['destination'];
                 $date = $_GET['date'];
+                
                 $_SESSION['date'] = $date;
                 // Prepare SQL statement to fetch buses
                 $sql = "SELECT * FROM buses WHERE source='$source' AND destination='$destination'";

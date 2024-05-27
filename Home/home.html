@@ -8,6 +8,25 @@
     <link rel="stylesheet" href="../Navbar/nav.css">
     <link rel="stylesheet" href="home.css">
     <link rel="icon" type="image/png" href="../Assets/images/bus-icon.png">
+    <script type="text/javascript">
+        function validateDate() {
+            // Get the entered date from the input field
+            var enteredDate = document.getElementById('date').value;
+            // Convert the entered date to a Date object
+            var enteredDateObj = new Date(enteredDate);
+            // Get the current date
+            var currentDate = new Date();
+            // Check if the entered date is in the past
+            if (enteredDateObj < currentDate) {
+                // Show alert message
+                alert("Enter valid date!");
+                // Prevent form submission
+                return false;
+            }
+            // Allow form submission
+            return true;
+        }
+    </script>
 </head>
 
 <body>
@@ -16,7 +35,7 @@
     <!-- main part -->
     <div class="container">
         <h1>Bus Booking</h1><br><br>
-        <form action="../Booking/Booking1.php">
+        <form action="../Booking/Booking1.php" onsubmit="return validateDate();">
             <div class="form-group">
                 <label for="source">Source:</label>
                 <select id="source" name="source" required>
